@@ -1,0 +1,65 @@
+/* Main Content Area */
+.main-wrapper {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition: var(--transition);
+}
+
+/* Top Bar */
+.topbar {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    cursor: pointer;
+}
+
+.campaign-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff3ed;
+    border: 1px solid #ffd8c7;
+    color: var(--heat-orange);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.folder-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--light-green);
+    color: var(--primary-green);
+    border: 1px solid var(--leaf-green);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.folder-btn:hover {
+    background: var(--leaf-green);
+    color: #ffffff;
+}

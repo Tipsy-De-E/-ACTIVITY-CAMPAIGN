@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Today, Prepare for Tomorrow | El Niño Awareness Campaign</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../Design/cardslayout.css">
+    <link rel="stylesheet" href="../Design/checklist.css">
+    <link rel="stylesheet" href="../Design/contentsection.css">
+    <link rel="stylesheet" href="../Design/gallery.css">
+    <link rel="stylesheet" href="../Design/general.css">
+    <link rel="stylesheet" href="../Design/herobanner.css">
+    <link rel="stylesheet" href="../Design/main.css">
+    <link rel="stylesheet" href="../Design/maincontent.css">
+    <link rel="stylesheet" href="../Design/style.css">
+    <link rel="stylesheet" href="../Design/survey.css">
+    <link rel="stylesheet" href="../Design/tab.css">
+    <link rel="stylesheet" href="../Design/timeline.css">
+    <link rel="stylesheet" href="../Design/footer.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="header-home">
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="burger-btn" type="button" aria-label="Open navigation menu" aria-controls="homeMenu"
+                aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            <a href="Home.html" class="brand-logo"><i class="fa-solid fa-seedling"></i>
+                <div class="brand-text"><span class="title">Plant Today</span><span class="subtitle">El Niño
+                        Campaign</span></div>
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="Home.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="About.html" class="nav-link"><i class="fa-solid fa-sun"></i> About</a>
+                <a href="Why.html" class="nav-link"><i class="fa-solid fa-tree"></i> Why Trees?</a>
+                <a href="Planting/preparedness.html" class="nav-link"><i class="fa-solid fa-shield-halved"></i>
+                    Preparedness</a>
+                <a href="Tips/tree-planting.html" class="nav-link"><i class="fa-solid fa-hands-holding-circle"></i>
+                    Activity</a>
+                <a href="Activity/Posters.html" class="nav-link"><i class="fa-solid fa-image"></i> Posters</a>
+                <a href="Activity/Infographics.html" class="nav-link"><i class="fa-solid fa-chart-pie"></i>
+                    Infographics</a>
+                <a href="Activity/SocMed.html" class="nav-link"><i class="fa-solid fa-share-nodes"></i> Social Media</a>
+            </nav>
+        </div>
+        <div class="burger-overlay"></div>
+        <aside class="burger-menu" id="homeMenu" aria-label="Additional navigation">
+            <div class="burger-header">
+                <h3><i class="fa-solid fa-seedling"></i> Campaign Menu</h3><button class="close-btn" type="button"
+                    aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="burger-links">
+                <li><a href="Documentations.html"><i class="fa-solid fa-camera-retro"></i> Documentation</a></li>
+                <li><a href="ResultsMain.html"><i class="fa-solid fa-chart-line"></i> Results</a></li>
+                <li><a href="../Assets/Campaign/Awareness.html"><i class="fa-solid fa-video"></i> Awareness</a></li>
+                <li><a href="../Assets/Campaign/Community.html"><i class="fa-solid fa-users"></i> Community</a></li>
+            </ul>
+        </aside>
+    </header>
+    <script>document.currentScript.previousElementSibling.querySelector('.burger-btn').addEventListener('click', function () { const header = this.closest('.navbar'); header.querySelector('.burger-menu').classList.add('open'); header.querySelector('.burger-overlay').classList.add('active'); }); document.currentScript.previousElementSibling.querySelector('.close-btn').addEventListener('click', function () { const header = this.closest('.navbar'); header.querySelector('.burger-menu').classList.remove('open'); header.querySelector('.burger-overlay').classList.remove('active'); }); document.currentScript.previousElementSibling.querySelector('.burger-overlay').addEventListener('click', function () { this.classList.remove('active'); this.nextElementSibling.classList.remove('open'); });</script>
+
+    <div class="app-container">
+
+        <!-- SIDEBAR NAVIGATION -->
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                    <h2>Plant Today</h2>
+                    <span>El Niño Campaign</span>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><button class="nav-btn active" data-target="sec-home"><i
+                            class="fa-solid fa-house"></i>
+                        Home</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-about"><i class="fa-solid fa-sun"></i>
+                        About El Niño</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-why-tree"><i class="fa-solid fa-tree"></i>
+                        Why Tree Planting?</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-tips"><i
+                            class="fa-solid fa-shield-halved"></i>
+                        Preparedness Tips</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-activity"><i
+                            class="fa-solid fa-hands-holding-circle"></i> Tree-Planting Activity</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-posters"><i class="fa-solid fa-image"></i>
+                        Posters</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-infographics"><i
+                            class="fa-solid fa-chart-pie"></i> Infographics</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-social"><i
+                            class="fa-solid fa-share-nodes"></i>
+                        Social Media Campaign</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-video"><i class="fa-solid fa-video"></i>
+                        Awareness Video</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-survey"><i class="fa-solid fa-poll-h"></i>
+                        Community Survey</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-photos"><i
+                            class="fa-solid fa-camera-retro"></i>
+                        Photos & Documentation</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-results"><i
+                            class="fa-solid fa-chart-line"></i>
+                        Results</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-reflection"><i
+                            class="fa-solid fa-book-open"></i>
+                        Reflection</button></li>
+                <li class="nav-item"><button class="nav-btn" data-target="sec-references"><i
+                            class="fa-solid fa-bookmark"></i>
+                        References</button></li>
+            </ul>
+        </aside>
+        <!-- MAIN CONTENT WRAPPER -->
+        <div class="main-wrapper">
+
+            <!-- TOP NAVIGATION BAR -->
+            <header class="topbar">
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <button class="mobile-toggle" id="mobileToggle"><i class="fa-solid fa-bars"></i></button>
+                    <div class="campaign-badge"><i class="fa-solid fa-fire-flame-curved"></i> El Niño Resilience</div>
+                </div>
+            </header>
+
+            <!-- CONTENT SECTIONS CONTAINER -->
+            <main class="content-area">
+
+                <!-- 1. HOME SECTION -->
+                <section id="sec-home" class="section-block active">
+                    <div class="hero-banner">
+                        <span class="hero-tag">TCM Environmental Initiative</span>
+                        <h1>Plant Today, Prepare for Tomorrow</h1>
+                        <p><strong>El Niño Awareness Campaign</strong> — “Plant Trees. Protect Our Community. Prepare
+                            for El Niño.”</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="Tips/tree-planting.html"><i
+                                    class="fa-solid fa-seedling"></i> Join Tree Planting</a>
+                            <a class="btn btn-secondary" href="Planting/preparedness.html"><i
+                                    class="fa-solid fa-list-check"></i> Preparedness Tips</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Role of TCM Students</h3>
+                        <p>El Niño can bring hotter and drier conditions that severely affect communities. As
+                            Transcultural Communication & Media (TCM) students, we utilize strategic communication,
+                            digital technology, and grassroots activism to spread vital environmental awareness and
+                            encourage proactive actions that help our communities build lasting climate resilience.</p>
+                    </div>
+
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
+                            <h3>Plant a Tree</h3>
+                            <p>Trees provide vital shade, lower ambient temperatures in built-up areas, and enhance soil
+                                health during extended dry spells.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                            <h3>Spread Awareness</h3>
+                            <p>Empower families and neighbors with practical, actionable information on water
+                                preservation and extreme heat safety.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                            <h3>Build Preparedness</h3>
+                            <p>Unite community leaders, students, and citizens to minimize heat-related risks through
+                                joint environmental initiatives.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- CAMPAIGN FOOTER -->
+    <footer class="campaign-footer">
+        <div class="footer-container">
+            <!-- Column 1: Campaign Overview -->
+            <div class="footer-col brand-col">
+                <div class="footer-brand">
+                    <i class="fa-solid fa-seedling"></i>
+                    <div>
+                        <h3>Plant Today</h3>
+                        <span>El Niño Campaign</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    An initiative by Transcultural Communication & Media (TCM) students to build climate resilience,
+                    promote
+                    tree-planting, and empower communities against extreme heat and drought.
+                </p>
+                <div class="footer-socials">
+                    <a href="Activity/SocMed.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="Activity/SocMed.html" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="Activity/SocMed.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="Activity/SocMed.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="Home.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="About.html"><i class="fa-solid fa-angle-right"></i> About El Niño</a></li>
+                    <li><a href="Why.html"><i class="fa-solid fa-angle-right"></i> Why Trees?</a></li>
+                    <li><a href="Planting/preparedness.html"><i class="fa-solid fa-angle-right"></i> Preparedness
+                            Tips</a></li>
+                    <li><a href="Tips/tree-planting.html"><i class="fa-solid fa-angle-right"></i> Tree Planting
+                            Activity</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Campaign Materials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Campaign Media</h4>
+                <ul class="footer-links">
+                    <li><a href="Activity/Posters.html"><i class="fa-solid fa-angle-right"></i> Posters</a></li>
+                    <li><a href="Activity/Infographics.html"><i class="fa-solid fa-angle-right"></i> Infographics</a>
+                    </li>
+                    <li><a href="Activity/SocMed.html"><i class="fa-solid fa-angle-right"></i> Social Media Drive</a>
+                    </li>
+                    <li><a href="../Assets/Campaign/Awareness.html"><i class="fa-solid fa-angle-right"></i> Awareness
+                            Video</a></li>
+                    <li><a href="Documentations.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Hotline & Action -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Emergency & Care</h4>
+                <div class="footer-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <strong>Heat Stroke Hotline</strong>
+                        <p>Contact Local Emergency Services (911 / Local NDRRMC) in case of heat emergencies.</p>
+                    </div>
+                </div>
+                <a href="Tips/tree-planting.html" class="footer-btn">
+                    <i class="fa-solid fa-hand-holding-heart"></i> Join Our Drive
+                </a>
+            </div>
+        </div>
+
+        <!-- Sub-footer Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Plant Today, Prepare for Tomorrow</strong>. Transcultural Communication & Media (TCM)
+                Student Project. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- ==========================================================================
+       EXTERNAL JS EQUIVALENT (Save as: assets/js/app.js)
+       ========================================================================== -->
+    <script>
+        document.querySelectorAll('.nav-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetSection = button.getAttribute('data-target');
+
+                document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                document.querySelectorAll('.section-block').forEach(sec => sec.classList.remove('active'));
+                const activeSec = document.getElementById(targetSection);
+                if (activeSec) {
+                    activeSec.classList.add('active');
+                }
+
+                document.getElementById('sidebar').classList.remove('open');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        function navigateTo(sectionId) {
+            const btn = document.querySelector(`[data-target="${sectionId}"]`);
+            if (btn) btn.click();
+        }
+
+        document.getElementById('mobileToggle').addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('open');
+        });
+
+        function openTab(evt, tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+
+        document.querySelectorAll('.check-item input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    this.parentElement.classList.add('completed');
+                } else {
+                    this.parentElement.classList.remove('completed');
+                }
+            });
+        });
+
+        // Modal Helpers
+        const folderModal = document.getElementById('folderModal');
+        document.getElementById('folderGuideBtn').addEventListener('click', () => {
+            folderModal.classList.add('active');
+        });
+
+        function closeModal() {
+            folderModal.classList.remove('active');
+        }
+
+        function showModal(title, content) {
+            alert(`${title}\n\n${content}`);
+        }
+
+        // File Upload Simulation
+        function triggerUpload(inputId) {
+            document.getElementById(inputId).click();
+        }
+
+        function handleFileUpload(event, gridId) {
+            const file = event.target.files[0];
+            if (file) {
+                const grid = document.getElementById(gridId);
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const card = document.createElement('div');
+                    card.className = 'media-card';
+                    card.innerHTML = `
+            <div class="media-preview">
+              <img src="${e.target.result}" alt="Uploaded Asset">
+            </div>
+            <div class="media-info">
+              <h4>${file.name}</h4>
+              <p>Uploaded custom campaign asset</p>
+            </div>
+          `;
+                    grid.prepend(card);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Clipboard Copy Helper
+        function copyToClipboard(buttonElement, text) {
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = text;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const originalText = buttonElement.innerHTML;
+            buttonElement.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+            setTimeout(() => {
+                buttonElement.innerHTML = originalText;
+            }, 2000);
+        }
+
+        // Survey Handler
+        function handleSurveySubmit(e) {
+            e.preventDefault();
+            document.getElementById('surveyForm').style.display = 'none';
+            document.getElementById('surveyFeedback').style.display = 'block';
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(btn, category) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,40 @@
+/* Timeline Component */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--leaf-green);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px var(--border-color);
+}
+
+.timeline-content {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}

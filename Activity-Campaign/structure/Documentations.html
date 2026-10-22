@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Documentation</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../Design/cardslayout.css">
+    <link rel="stylesheet" href="../Design/checklist.css">
+    <link rel="stylesheet" href="../Design/contentsection.css">
+    <link rel="stylesheet" href="../Design/gallery.css">
+    <link rel="stylesheet" href="../Design/general.css">
+    <link rel="stylesheet" href="../Design/herobanner.css">
+    <link rel="stylesheet" href="../Design/main.css">
+    <link rel="stylesheet" href="../Design/maincontent.css">
+    <link rel="stylesheet" href="../Design/style.css">
+    <link rel="stylesheet" href="../Design/survey.css">
+    <link rel="stylesheet" href="../Design/tab.css">
+    <link rel="stylesheet" href="../Design/timeline.css">
+    <link rel="stylesheet" href="../Design/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="page-with-header">
+    <header class="navbar">
+        <div class="nav-container"><button class="burger-btn" type="button" aria-label="Open navigation menu"
+                aria-controls="documentationMenu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button><a
+                href="Home.html" class="brand-logo"><i class="fa-solid fa-seedling"></i>
+                <div class="brand-text"><span class="title">Plant Today</span><span class="subtitle">El Niño
+                        Campaign</span></div>
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation"><a href="Home.html" class="nav-link"><i
+                        class="fa-solid fa-house"></i> Home</a><a href="About.html" class="nav-link"><i
+                        class="fa-solid fa-sun"></i> About</a><a href="Why.html" class="nav-link"><i
+                        class="fa-solid fa-tree"></i> Why Trees?</a><a href="Planting/preparedness.html"
+                    class="nav-link"><i class="fa-solid fa-shield-halved"></i> Preparedness</a><a
+                    href="Tips/tree-planting.html" class="nav-link"><i class="fa-solid fa-hands-holding-circle"></i>
+                    Activity</a><a href="Activity/Posters.html" class="nav-link"><i class="fa-solid fa-image"></i>
+                    Posters</a><a href="Activity/Infographics.html" class="nav-link"><i
+                        class="fa-solid fa-chart-pie"></i> Infographics</a><a href="Activity/SocMed.html"
+                    class="nav-link"><i class="fa-solid fa-share-nodes"></i> Social Media</a></nav>
+        </div>
+        <div class="burger-overlay"></div>
+        <aside class="burger-menu" id="documentationMenu" aria-label="Additional navigation">
+            <div class="burger-header">
+                <h3><i class="fa-solid fa-seedling"></i> Campaign Menu</h3><button class="close-btn" type="button"
+                    aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="burger-links">
+                <li><a href="Documentations.html" class="active"><i class="fa-solid fa-camera-retro"></i>
+                        Documentation</a></li>
+                <li><a href="ResultsMain.html"><i class="fa-solid fa-chart-line"></i> Results</a></li>
+                <li><a href="../Assets/Campaign/Awareness.html"><i class="fa-solid fa-video"></i> Awareness</a></li>
+                <li><a href="../Assets/Campaign/Community.html"><i class="fa-solid fa-users"></i> Community</a></li>
+            </ul>
+        </aside>
+    </header>
+    <script>document.currentScript.previousElementSibling.querySelector('.burger-btn').addEventListener('click', function () { const header = this.closest('.navbar'); header.querySelector('.burger-menu').classList.add('open'); header.querySelector('.burger-overlay').classList.add('active'); }); document.currentScript.previousElementSibling.querySelector('.close-btn').addEventListener('click', function () { const header = this.closest('.navbar'); header.querySelector('.burger-menu').classList.remove('open'); header.querySelector('.burger-overlay').classList.remove('active'); }); document.currentScript.previousElementSibling.querySelector('.burger-overlay').addEventListener('click', function () { this.classList.remove('active'); this.nextElementSibling.classList.remove('open'); });</script>
+    <!-- 11. PHOTOS & DOCUMENTATION -->
+    <section id="sec-photos" class="section-block active">
+        <div class="section-header">
+            <h1>Photos & Documentation</h1>
+            <p>Visual gallery documenting campaign execution and tree planting activities.</p>
+        </div>
+
+        <div class="filter-bar documentation-filters" role="group" aria-label="Filter documentation photos">
+            <button class="filter-btn active" type="button" onclick="filterGallery(this, 'all')">All Photos</button>
+            <button class="filter-btn" type="button" onclick="filterGallery(this, 'prep')">Preparation</button>
+            <button class="filter-btn" type="button" onclick="filterGallery(this, 'planting')">Tree Planting</button>
+            <button class="filter-btn" type="button" onclick="filterGallery(this, 'seminar')">Orientations</button>
+        </div>
+
+        <div class="media-grid" id="photo-gallery">
+            <div class="media-card gallery-item" data-category="prep">
+                <div class="media-preview">
+                    <i class="fa-solid fa-seedling fa-3x"></i>
+                </div>
+                <div class="media-info">
+                    <h4>Seedling Preparation</h4>
+                    <p>Sorting native tree saplings for distribution.</p>
+                </div>
+            </div>
+
+            <div class="media-card gallery-item" data-category="planting">
+                <div class="media-preview">
+                    <i class="fa-solid fa-hands-holding-circle fa-3x"></i>
+                </div>
+                <div class="media-info">
+                    <h4>Planting Day Action</h4>
+                    <p>Students and residents planting trees together.</p>
+                </div>
+            </div>
+
+            <div class="media-card gallery-item" data-category="seminar">
+                <div class="media-preview">
+                    <i class="fa-solid fa-chalkboard-user fa-3x"></i>
+                </div>
+                <div class="media-info">
+                    <h4>El Niño Briefing</h4>
+                    <p>Short community talk on heat safety and water care.</p>
+                </div>
+            </div>
+
+            <div class="media-card gallery-item" data-category="prep">
+                <div class="media-preview media-preview-prep"><i class="fa-solid fa-boxes-stacked fa-3x"></i></div>
+                <div class="media-info">
+                    <h4>Materials Check</h4>
+                    <p>Organizing gloves, tools, water, and protective supplies before the activity.</p>
+                </div>
+            </div>
+
+            <div class="media-card gallery-item" data-category="planting">
+                <div class="media-preview media-preview-planting"><i class="fa-solid fa-person-digging fa-3x"></i></div>
+                <div class="media-info">
+                    <h4>Community Planting</h4>
+                    <p>Volunteers preparing planting holes and caring for each young tree.</p>
+                </div>
+            </div>
+
+            <div class="media-card gallery-item" data-category="seminar">
+                <div class="media-preview media-preview-seminar"><i class="fa-solid fa-people-group fa-3x"></i></div>
+                <div class="media-info">
+                    <h4>Community Orientation</h4>
+                    <p>Participants learning practical heat-safety, water-care, and planting steps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="campaign-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-brand"><i class="fa-solid fa-seedling"></i>
+                    <div>
+                        <h3>Plant Today</h3><span>El Niño Campaign</span>
+                    </div>
+                </div>
+                <p class="footer-desc">Building climate resilience through tree planting, awareness, and community
+                    action.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About El Niño</a></li>
+                    <li><a href="Why.html">Why Trees?</a></li>
+                    <li><a href="Planting/preparedness.html">Preparedness</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Campaign</h4>
+                <ul class="footer-links">
+                    <li><a href="Tips/tree-planting.html">Tree Planting</a></li>
+                    <li><a href="Activity/Posters.html">Posters</a></li>
+                    <li><a href="Activity/Infographics.html">Infographics</a></li>
+                    <li><a href="Activity/SocMed.html">Social Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Emergency &amp; Care</h4>
+                <div class="footer-card"><i class="fa-solid fa-headset"></i>
+                    <div><strong>Heat Stroke Hotline</strong>
+                        <p>Contact Local Emergency Services (911 / Local NDRRMC) in case of heat emergencies.</p>
+                    </div>
+                </div>
+                <a href="Tips/tree-planting.html" class="footer-btn"><i class="fa-solid fa-hand-holding-heart"></i> Join
+                    Our Drive</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Plant Today, Prepare for Tomorrow</strong>. TCM Student Project.</p>
+        </div>
+    </footer>
+    <script>
+        function filterGallery(button, category) {
+            document.querySelectorAll('.documentation-filters .filter-btn').forEach(filterButton => {
+                filterButton.classList.remove('active');
+            });
+            button.classList.add('active');
+
+            document.querySelectorAll('#photo-gallery .gallery-item').forEach(item => {
+                item.hidden = category !== 'all' && item.dataset.category !== category;
+            });
+        }
+    </script>
+</body>
+
+</html>
